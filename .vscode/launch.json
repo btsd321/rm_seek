@@ -1,0 +1,57 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "build(debug) && launch",
+            "type": "ros",
+            "request": "launch",
+            //"target": "/home/lixinhao/Project/rm_seek/install/share/rm_seek/launch/seek_simu.launch.py",
+            "target": "/home/lixinhao/Project/rm_seek/install/rm_seek/share/rm_seek/launch/seek_simu.launch.py",
+            "env": {
+                //"AMENT_PREFIX_PATH": "/opt/ros/humble:/home/lixinhao/Project/rm_seek/install"
+                "AMENT_PREFIX_PATH": "/opt/ros/humble:/home/lixinhao/Project/rm_seek/install/rm_interfaces:/home/lixinhao/Project/rm_seek/install/rm_utils:/home/lixinhao/Project/rm_seek/install/seek_simu_camera:/home/lixinhao/Project/rm_seek/install/seek_detector:/home/lixinhao/Project/rm_seek/install/seek_solver:/home/lixinhao/Project/rm_seek/install/rm_seek",
+                "LD_LIBRARY_PATH": "/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/lixinhao/Project/rm_seek/install/rm_interfaces/lib:/home/lixinhao/Project/rm_seek/install/rm_utils/lib:/home/lixinhao/Project/rm_seek/install/seek_simu_camera/lib:/home/lixinhao/Project/rm_seek/install/seek_detector/lib:/home/lixinhao/Project/rm_seek/install/seek_solver/lib:/home/lixinhao/Project/rm_seek/install/rm_seek/lib"
+            },
+            "preLaunchTask": "build(debug) && run"
+        },
+        {
+            "name": "build(release) && launch",
+            "type": "ros",
+            "request": "launch",
+            //"target": "/home/lixinhao/Project/rm_seek/install/share/rm_seek/launch/seek_simu.launch.py",
+            "target": "/home/lixinhao/Project/rm_seek/install/rm_seek/share/rm_seek/launch/seek_simu.launch.py",
+            "env": {
+                //"AMENT_PREFIX_PATH": "/opt/ros/humble:/home/lixinhao/Project/rm_seek/install"
+                "AMENT_PREFIX_PATH": "/opt/ros/humble:/home/lixinhao/Project/rm_seek/install/rm_interfaces:/home/lixinhao/Project/rm_seek/install/rm_utils:/home/lixinhao/Project/rm_seek/install/seek_simu_camera:/home/lixinhao/Project/rm_seek/install/seek_detector:/home/lixinhao/Project/rm_seek/install/seek_solver:/home/lixinhao/Project/rm_seek/install/rm_seek",
+                "LD_LIBRARY_PATH": "/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/lixinhao/Project/rm_seek/install/rm_interfaces/lib:/home/lixinhao/Project/rm_seek/install/rm_utils/lib:/home/lixinhao/Project/rm_seek/install/seek_simu_camera/lib:/home/lixinhao/Project/rm_seek/install/seek_detector/lib:/home/lixinhao/Project/rm_seek/install/seek_solver/lib:/home/lixinhao/Project/rm_seek/install/rm_seek/lib"
+            },
+            "preLaunchTask": "build(release) && run"
+        },
+        {
+            "name": "clear && build(debug) && launch",
+            "type": "ros",
+            "request": "launch",
+            //"target": "/home/lixinhao/Project/rm_seek/install/share/rm_seek/launch/seek_simu.launch.py",
+            "target": "/home/lixinhao/Project/rm_seek/install/rm_seek/share/rm_seek/launch/seek_simu.launch.py",
+            "env": {
+                //"AMENT_PREFIX_PATH": "/opt/ros/humble:/home/lixinhao/Project/rm_seek/install"
+                "AMENT_PREFIX_PATH": "/opt/ros/humble:/home/lixinhao/Project/rm_seek/install/rm_interfaces:/home/lixinhao/Project/rm_seek/install/rm_utils:/home/lixinhao/Project/rm_seek/install/seek_simu_camera:/home/lixinhao/Project/rm_seek/install/seek_detector:/home/lixinhao/Project/rm_seek/install/seek_solver:/home/lixinhao/Project/rm_seek/install/rm_seek",
+                "LD_LIBRARY_PATH": "/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/lixinhao/Project/rm_seek/install/rm_interfaces/lib:/home/lixinhao/Project/rm_seek/install/rm_utils/lib:/home/lixinhao/Project/rm_seek/install/seek_simu_camera/lib:/home/lixinhao/Project/rm_seek/install/seek_detector/lib:/home/lixinhao/Project/rm_seek/install/seek_solver/lib:/home/lixinhao/Project/rm_seek/install/rm_seek/lib"
+            },
+            "preLaunchTask": "clear && build(debug) && run"
+        },
+        {
+            "name": "clear && build(release) && launch",
+            "type": "ros",
+            "request": "launch",
+            //"target": "/home/lixinhao/Project/rm_seek/install/share/rm_seek/launch/seek_simu.launch.py",
+            "target": "/home/lixinhao/Project/rm_seek/install/rm_seek/share/rm_seek/launch/seek_simu.launch.py",
+            "env": {
+                //"AMENT_PREFIX_PATH": "/opt/ros/humble:/home/lixinhao/Project/rm_seek/install"
+                "AMENT_PREFIX_PATH": "/opt/ros/humble:/home/lixinhao/Project/rm_seek/install/rm_interfaces:/home/lixinhao/Project/rm_seek/install/rm_utils:/home/lixinhao/Project/rm_seek/install/seek_simu_camera:/home/lixinhao/Project/rm_seek/install/seek_detector:/home/lixinhao/Project/rm_seek/install/seek_solver:/home/lixinhao/Project/rm_seek/install/rm_seek",
+                "LD_LIBRARY_PATH": "/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/lixinhao/Project/rm_seek/install/rm_interfaces/lib:/home/lixinhao/Project/rm_seek/install/rm_utils/lib:/home/lixinhao/Project/rm_seek/install/seek_simu_camera/lib:/home/lixinhao/Project/rm_seek/install/seek_detector/lib:/home/lixinhao/Project/rm_seek/install/seek_solver/lib:/home/lixinhao/Project/rm_seek/install/rm_seek/lib"
+            },
+            "preLaunchTask": "clear && build(release) && run"
+        }
+    ]
+}

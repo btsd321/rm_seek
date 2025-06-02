@@ -1,0 +1,61 @@
+# ROS build and development files
+build/
+devel/
+install/
+
+# ROS log files
+log/
+logs/
+
+# ROS workspace files
+.catkin_workspace
+.catkin_tools/
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Compiled object files
+*.o
+*.lo
+*.la
+*.al
+*.a
+*.so
+*.so.*
+
+# Editor and system files
+*.swp
+*.swo
+*.bak
+*.tmp
+*.~*
+*.DS_Store
+Thumbs.db
+
+# IDE specific files
+.idea/
+*.code-workspace
+
+# Python cache files (if using Python scripts in the project)
+__pycache__/
+*.pyc
+*.pyo
+
+# Other temporary files
+*.log
+*.out
+*.err
+*.pid
+*.gz
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
+
+#custom directories
+#rm_utils/
+#rm_interfaces/

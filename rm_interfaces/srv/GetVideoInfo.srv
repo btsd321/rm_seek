@@ -1,0 +1,5 @@
+---
+string img_topic_name
+float64 publish_rate
+int32 img_width
+int32 img_height

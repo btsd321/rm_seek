@@ -1,0 +1,13 @@
+seek_detector_node:
+  ros__parameters:
+    frame_id: "camera_link"         # 相机坐标系名称
+    requests_limit: 5                      # 最大请求数
+    ekf_filter:
+      process_noise_cov: [0.01, 0.0, 0.0, 0.0, 
+                          0.0, 0.01, 0.0, 0.0, 
+                          0.0, 0.0, 0.01, 0.0, 
+                          0.0, 0.0, 0.0, 0.01]  # 4x4 过程噪声协方差矩阵
+      measurement_noise_cov: [0.1, 0.0, 
+                              0.0, 0.1]        # 2x2 观测噪声协方差矩阵
+    enable_visualization: 1         # 是否开启可视化
+    result_img_topic_name: "seek_detector/result_image"  # 结果图像话题名称

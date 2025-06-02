@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "/usr/include",
+                "/opt/ros/humble/include/**",
+                "/usr/include/opencv4/**",
+                "/usr/include/eigen3/**",
+                "${workspaceFolder}/rm_utils/include/**",
+                "${workspaceFolder}/rm_utils/include/rm_utils/logger/**",
+                "${workspaceFolder}/seek_solver/include/**",
+                "${workspaceFolder}/seek_detector/include/**",
+                "${workspaceFolder}/seek_simu_camera/include/**",
+                "${workspaceFolder}/install/rm_interfaces/include/rm_interfaces"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64",
+            "compileCommands": [
+                "${workspaceFolder}/build/compile_commands.json"
+            ]
+        }
+    ],
+    "version": 4
+}

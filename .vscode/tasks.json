@@ -1,0 +1,45 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build(debug) && run",
+            "type": "shell",
+            "command": "source /opt/ros/humble/setup.zsh && colcon build --event-handlers console_cohesion+ --cmake-args -DCMAKE_BUILD_TYPE=Debug && source install/setup.zsh",
+            "args": [
+                "--directory",
+                "${workspaceFolder}",
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "build(release) && run",
+            "type": "shell",
+            "command": "source /opt/ros/humble/setup.zsh && colcon build --event-handlers console_cohesion+ --cmake-args -DCMAKE_BUILD_TYPE=Release && source install/setup.zsh",
+            "args": [
+                "--directory",
+                "${workspaceFolder}",
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "clear && build(debug) && run",
+            "type": "shell",
+            "command": "rm -rf build log install && source /opt/ros/humble/setup.zsh && colcon build --event-handlers console_cohesion+ --cmake-args -DCMAKE_BUILD_TYPE=Debug && source install/setup.zsh",
+            "args": [
+                "--directory",
+                "${workspaceFolder}",
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "clear && build(release) && run",
+            "type": "shell",
+            "command": "rm -rf build log install && source /opt/ros/humble/setup.zsh && colcon build --event-handlers console_cohesion+ --cmake-args -DCMAKE_BUILD_TYPE=Release && source install/setup.zsh",
+            "args": [
+                "--directory",
+                "${workspaceFolder}",
+            ],
+            "problemMatcher": []
+        }
+    ]
+}

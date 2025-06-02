@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+<!-- Base -->
+  <xacro:macro name="seek_object_link" params="link_name parent xyz rpy">
+    <link name="${link_name}_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.264 0.264 0.02"/>
+        </geometry>
+        <material name="biue">
+          <color rgba="0.0 0.0 1.0 1"/>
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.264 0.264 0.02"/>
+        </geometry>
+        <material name="biue">
+          <color rgba="0.0 0.0 1.0 1"/>
+        </material>
+      </collision>
+    </link>
+
+    <joint name="${link_name}_joint" type="floating">
+      <parent link="${parent}"/>
+      <child link="${link_name}_link"/>
+      <origin xyz="${xyz}" rpy="${rpy}"/>
+    </joint>
+  </xacro:macro>
+</robot>

@@ -1,0 +1,23 @@
+seek_simu_camera_node:
+  ros__parameters:
+    video_path: "/home/lixinhao/Videos/test_blue.avi"  # 视频文件路径
+    img_topic_name: "seek_simu_camera/raw_image"                             # 发布的主题名称
+    camera_info_topic_name: "seek_simu_camera/camera_info"                 # 相机信息发布主题名称
+    publish_rate: 10                                               # 发布频率（帧率）
+
+    # 相机参数
+    camera_info:
+      width: 1280                                                     # 图像宽度
+      height: 1024                                                    # 图像高度
+      distortion_model: "plumb_bob"                                  # 畸变模型
+      d: [0.0, 0.0, 0.0, 0.0, 0.0]                                   # 畸变系数 D
+      k: [1807.12121,    0.     ,  711.11997,
+            0.     , 1806.46896,  562.49495,
+            0.     ,    0.     ,    1.     ]
+      r: [1.0, 0.0, 0.0,                                             # 旋转矩阵 R
+          0.0, 1.0, 0.0,
+          0.0, 0.0, 1.0]
+      p: [1807.12121,    0.     ,  711.11997, 0.0,
+            0.     , 1806.46896,  562.49495, 0.0,
+            0.     ,    0.     ,    1.     , 0.0]
+

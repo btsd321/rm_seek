@@ -1,0 +1,3 @@
+bool command #open or close
+---
+bool result

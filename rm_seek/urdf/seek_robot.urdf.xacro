@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<robot name="seek_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:include filename="$(find rm_seek)/urdf/base.urdf.xacro" />
+  <xacro:include filename="$(find rm_seek)/urdf/camera.urdf.xacro"/>
+  <xacro:include filename="$(find rm_seek)/urdf/seek_object.urdf.xacro"/>
+
+  <xacro:base_link length="0.3" radius="0.2"/>
+  <xacro:camera_link parent="base_link" xyz="0.2 0.0 0.13" rpy="1.5708 0.0 3.1416"/>
+  <xacro:seek_object_link link_name="object" parent="camera_link" xyz="1.0 0.0 0.1" rpy="1.5708 0.0 3.1416"/>
+</robot> 

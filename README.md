@@ -4,4 +4,4 @@
 基于YOLO的目标检测
 
 # 效果如下：
-![image](https://github.com/btsd321/rm_seek/image/test.png)
+![image](public/image/test.png)

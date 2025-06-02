@@ -1,3 +1,7 @@
-YOLO目标检测项目
+# rm_seek
 
-效果如下，可以实时对目标框进行定位和检测
+#### Description
+基于YOLO的目标检测
+
+# 效果如下：
+![image](https://github.com/btsd321/rm_seek/image/test.png)
